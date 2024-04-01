@@ -7,8 +7,8 @@ POST http://localhost:4000/signup
 Content-Type: application/json
 
 {
-  "username": "Simeoneban", 
-  "email": "haram@mail.com",
+  "username": "Christian Bale", 
+  "email": "chris@mail.com",
   "password": "password"
 }
 
@@ -22,7 +22,7 @@ POST http://localhost:4000/login
 Content-Type: application/json
 
 {
-  "email": "haram@mail.com",
+  "email": "chris@mail.com",
   "password": "password"
 }
 

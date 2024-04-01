@@ -78,3 +78,7 @@ app.delete("/logout", (req, res) => {
         message: "Logout successful",
     });
 });
+
+app.get("/users", (req, res) => {
+    res.status(200).send(users);
+});
