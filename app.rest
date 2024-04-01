@@ -1,0 +1,46 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNpbWVvbmViYW4iLCJlbWFpbCI6ImhhcmFtQG1haWwuY29tIiwiaGFzaCI6IiQyYiQxMCRXSGgzbkdkSzlYd0I0T1l5YWtOMWx1enRsMzBoQ01wU0t6SDJLT1VJRlVwY0RmZTlwNXV3aSIsImlhdCI6MTcxMTk3ODYxNywiZXhwIjoxNzExOTc4NjQ3fQ.sLHExcirUwPXjrEEfXabIgHOW45cWzA4WN4pfTPG4B4
+
+###
+
+POST http://localhost:4000/signup
+Content-Type: application/json
+
+{
+  "username": "Simeoneban", 
+  "email": "haram@mail.com",
+  "password": "password"
+}
+
+###
+
+GET http://localhost:4000/users
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+  "email": "haram@mail.com",
+  "password": "password"
+}
+
+###
+
+POST  http://localhost:4000/token
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNpbWVvbmViYW4iLCJlbWFpbCI6ImhhcmFtQG1haWwuY29tIiwiaGFzaCI6IiQyYiQxMCRGQkFhVTc2bGRSNU4xdmI1THJxekJlLi51V2NkamJVVUhObnpWUEM1OVZMQzJ1bzVuNk42TyIsImlhdCI6MTcxMTk3NzY3OX0.ohxLWJdHBKtEsyhP_Gu1tTj0JRa5JiDug24etps8lic"
+}
+
+###
+
+DELETE http://localhost:4000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNpbWVvbmViYW4iLCJlbWFpbCI6ImhhcmFtQG1haWwuY29tIiwiaGFzaCI6IiQyYiQxMCRObjN3ZWl3cnNDdEhBSnpBMnkvMmVPRWVvSzhtLmE0OTNXcDZVQVFyNXVKL0g3NGQyVmlFYSIsImlhdCI6MTcxMTk3ODA3OCwiZXhwIjoxNzExOTc4MTA4fQ.adGK_0jx00NRXxfWkxIz6BRtxLEbclXfUaE1Hx_OV00.eyJ1c2VybmFtZSI6IlNpbWVvbmViYW4iLCJlbWFpbCI6ImhhcmFtQG1haWwuY29tIiwiaGFzaCI6IiQyYiQxMCRObjN3ZWl3cnNDdEhBSnpBMnkvMmVPRWVvSzhtLmE0OTNXcDZVQVFyNXVKL0g3NGQyVmlFYSIsImlhdCI6MTcxMTk3Nzk3OCwiZXhwIjoxNzExOTc4MDA4fQ.kqlVvWywBU1hwwpzHC49jb5FJEMnmdhdAx_J571dmPc
+Content-Type: application/json
+
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNpbWVvbmViYW4iLCJlbWFpbCI6ImhhcmFtQG1haWwuY29tIiwiaGFzaCI6IiQyYiQxMCRXSGgzbkdkSzlYd0I0T1l5YWtOMWx1enRsMzBoQ01wU0t6SDJLT1VJRlVwY0RmZTlwNXV3aSIsImlhdCI6MTcxMTk3ODYxN30.agF90Y2FiAbYE0VDSXs_-ByTmc8N5Y4O1FnerMQXzvo"
+}
